@@ -17,7 +17,7 @@ public class Main {
                     qlc.NhapHang();
                     break;
                 case 2:
-                    qlc.BanHang();
+                    qlc.BanHang(); 
                     break;
                 case 3:
                     qlc.ChucNangPerson();
