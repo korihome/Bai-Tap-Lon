@@ -5,8 +5,7 @@ import QuanLyChung.QuanLyChung;
 public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         QuanLyChung qlc = new QuanLyChung();
- 
-        
+
         Scanner scan = new Scanner(System.in);
         int choose;
         do {
