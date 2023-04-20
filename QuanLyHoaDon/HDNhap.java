@@ -31,9 +31,8 @@ public class HDNhap extends HoaDon {
         return a; 
     }
 
-    List<Computer> computers2 = new ArrayList<Computer>(); 
     public List<Computer> getComputers() {
-        return computers2;
+        return computers1;
     }
 
     @Override
@@ -47,12 +46,9 @@ public class HDNhap extends HoaDon {
         int soLoai = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < soLoai; i++) {
             Computer mt1 = new Computer();
-            Computer mt2 = new Computer();
             mt1.Nhap();
             setTongBill(getTongBill() + mt1.getSoLuong() * mt1.getPrice());
-            mt1.SaoChepTT(mt2);
             computers1.add(mt1);
-            computers2.add(mt2);
         }
     }
 

@@ -78,12 +78,16 @@ public class QuanLySanPham implements ThemSuaXoa{
                     } 
                 }
                 if (check == 0) {
-                    computersList.add(comp1);
+                    Computer comp3 = new Computer();
+                    comp1.SaoChepTT(comp3);
+                    computersList.add(comp3);
                 }
             }
         } else {
-            for (Computer mt1 : computer) {
-                computersList.add(mt1);
+            for (Computer comp1 : computer) {
+                Computer comp3 = new Computer();
+                comp1.SaoChepTT(comp3);
+                computersList.add(comp3);
             }
         }
     }
